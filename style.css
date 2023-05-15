@@ -20,3 +20,15 @@ body{
     font-family: 'Metropolis', sans-serif;
     font-weight: 500;
   }
+
+
+  .nav-h{
+    height: 100%;
+  }
+
+
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
