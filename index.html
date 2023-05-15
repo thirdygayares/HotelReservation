@@ -107,151 +107,72 @@
 
     <div class="container">
 
-
-      <div class="row">
-       
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room1.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Deluxe Twin Room</h5>
-              <p class="mb-0">2 Full beds</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 2500 </p>
-        
-            </div>
-          </div>
-        </div>
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room2.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Junior Suite</h5>
-              <p class="mb-0">1 queen bed</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 1500 </p>
-        
-            </div>
-          </div>
-        </div>
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room3.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Deluxe King Room</h5>
-              <p class="mb-0">1 king bed</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 1600 </p>
-        
-            </div>
-          </div>
-        </div>
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room4.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Premium King Suite</h5>
-              <p class="mb-0">1 King bed</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 1750 </p>
-        
-            </div>
-          </div>
-        </div>
-       
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room5.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Premium Double Suite</h5>
-              <p class="mb-0">2 Full beds</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 2700 </p>
-        
-            </div>
-          </div>
-        </div>
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room6.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Executive King Suite</h5>
-              <p class="mb-0">1 King Bed</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 1900 </p>
-        
-            </div>
-          </div>
-        </div>
-       
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room7.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Executive Double Suite</h5>
-              <p class="mb-0">2 Full beds</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 2900 </p>
-            </div>
-          </div>
-        </div>
-    
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room8.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Grand Deluxe King Room</h5>
-              <p class="mb-0">1 king bed</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 2800 </p>
-        
-            </div>
-          </div>
-        </div>
-
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room9.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Manila Bay Suite</h5>
-              <p class="mb-0">2 Full beds</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 3500 </p>
-        
-            </div>
-          </div>
-        </div>
-
-        <div class="col mt-3">
-          <div class="card" style="width: 18rem;">
-            <img src="assets/room10.png" class="card-img-top p-2" alt="...">
-            <div class="card-body">
-              <h5 class="card-text text-black font-weight-bold mb-0">Accessible King</h5>
-              <p class="mb-0">1 queen bed</p>
-        
-              <p class="fs-6 mb-0">Starts at</p>
-              <p class=" mb-0"> Php 3000 </p>
-        
-            </div>
-          </div>
-        </div>
-
+      <div class="row" id="room-container" >
+  
       </div>
 
      
     
     </div>
+
+
+
     
-   
+    <script>
+      // insert the JavaScript code here
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          // loop through the "rooms" array
+          data.rooms.forEach(room => {
+            // create HTML elements
+            const colDiv = document.createElement('div');
+            colDiv.classList.add('col', 'mt-3');
+  
+            const cardDiv = document.createElement('div');
+            cardDiv.classList.add('card');
+            cardDiv.style.width = '18rem';
+  
+            const imgElement = document.createElement('img');
+            imgElement.src = room.image;
+            imgElement.classList.add('card-img-top', 'p-2');
+            imgElement.alt = '...';
+  
+            const cardBodyDiv = document.createElement('div');
+            cardBodyDiv.classList.add('card-body');
+  
+            const nameH5 = document.createElement('h5');
+            nameH5.classList.add('card-text', 'text-black', 'font-weight-bold', 'mb-0');
+            nameH5.textContent = room.name;
+  
+            const bedsP1 = document.createElement('p');
+            bedsP1.classList.add('mb-0');
+            bedsP1.textContent = room.beds;
+  
+            const priceP1 = document.createElement('p');
+            priceP1.classList.add('fs-6', 'mb-0');
+            priceP1.textContent = 'Starts at';
+  
+            const priceP2 = document.createElement('p');
+            priceP2.classList.add('mb-0');
+            priceP2.textContent = `Php ${room.price}`;
+  
+            // append HTML elements to the page
+            cardBodyDiv.appendChild(nameH5);
+            cardBodyDiv.appendChild(bedsP1);
+            cardBodyDiv.appendChild(priceP1);
+            cardBodyDiv.appendChild(priceP2);
+  
+            cardDiv.appendChild(imgElement);
+            cardDiv.appendChild(cardBodyDiv);
+  
+            colDiv.appendChild(cardDiv);
+  
+            document.getElementById('room-container').appendChild(colDiv);
+          });
+        });
+    </script>
+
    
     <!-- scripts -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>

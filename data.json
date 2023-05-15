@@ -1,0 +1,65 @@
+{
+    "rooms": [
+      {
+        "name": "Deluxe Twin Room",
+        "image": "assets/room1.png",
+        "beds": "2 Full beds",
+        "price": "2500"
+      },
+      {
+        "name": "Junior Suite",
+        "image": "assets/room2.png",
+        "beds": "1 queen bed",
+        "price": "1500"
+      },
+      {
+        "name": "Deluxe King Room",
+        "image": "assets/room3.png",
+        "beds": "1 king bed",
+        "price": "1600"
+      },
+      {
+        "name": "Premium King Suite",
+        "image": "assets/room4.png",
+        "beds": "1 King bed",
+        "price": "1750"
+      },
+      {
+        "name": "Premium Double Suite",
+        "image": "assets/room5.png",
+        "beds": "2 Full beds",
+        "price": "2700"
+      },
+      {
+        "name": "Executive King Suite",
+        "image": "assets/room6.png",
+        "beds": "1 King Bed",
+        "price": "1900"
+      },
+      {
+        "name": "Executive Double Suite",
+        "image": "assets/room7.png",
+        "beds": "2 Full beds",
+        "price": "2900"
+      },
+      {
+        "name": "Grand Deluxe King Room",
+        "image": "assets/room8.png",
+        "beds": "1 king bed",
+        "price": "2800"
+      },
+      {
+        "name": "Manila Bay Suite",
+        "image": "assets/room9.png",
+        "beds": "2 Full beds",
+        "price": "3500"
+      },
+      {
+        "name": "Accessible King",
+        "image": "assets/room10.png",
+        "beds": "1 queen bed",
+        "price": "3000"
+      }
+    ]
+  }
+  
