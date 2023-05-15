@@ -110,21 +110,16 @@
       <div class="row" id="room-container" >
   
       </div>
-
-     
-    
     </div>
 
 
-
-    
     <script>
       // insert the JavaScript code here
-      fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-          // loop through the "rooms" array
-          data.rooms.forEach(room => {
+      fetch('http://localhost/HotelReservation/backend/api.php')
+      .then(response => response.json())
+      .then(data => {
+        // loop through the retrieved data
+        data.forEach(room => {
             // create HTML elements
             const colDiv = document.createElement('div');
             colDiv.classList.add('col', 'mt-3');
@@ -134,7 +129,7 @@
             cardDiv.style.width = '18rem';
   
             const imgElement = document.createElement('img');
-            imgElement.src = room.image;
+            imgElement.src = room.imageSrc;
             imgElement.classList.add('card-img-top', 'p-2');
             imgElement.alt = '...';
   
@@ -143,11 +138,11 @@
   
             const nameH5 = document.createElement('h5');
             nameH5.classList.add('card-text', 'text-black', 'font-weight-bold', 'mb-0');
-            nameH5.textContent = room.name;
+            nameH5.textContent = room.title;
   
             const bedsP1 = document.createElement('p');
             bedsP1.classList.add('mb-0');
-            bedsP1.textContent = room.beds;
+            bedsP1.textContent = room.typeBed;
   
             const priceP1 = document.createElement('p');
             priceP1.classList.add('fs-6', 'mb-0');
