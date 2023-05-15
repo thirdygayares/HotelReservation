@@ -7,6 +7,8 @@
     <title>Contact Us!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
 
@@ -82,7 +84,41 @@
   
 
 
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent form submission
+                // Assuming you have the values stored in variables
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+                var message = document.getElementById('message').value;
+         
+          
+                // Create an object to hold the data
+            var data = {
+                name: name,
+                email: email,
+                phone: phone,
+                message: message
+            };
+            // Make the AJAX request
+            $.ajax({
+            type: "POST",
+            url: "http://localhost/HotelReservation/backend/contact.php",
+            data: data,
+            success: function(response) {
+                alert("Contact successfully");
+                window.location.href = 'index.html';
+                console.log("Record created successfully");
+            },
+            error: function(xhr, status, error) {
+                console.error(xhr.responseText);
+                alert(xhr.responseText);
+            }
+            });   
+        });
 
+        </script>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
