@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Metropolis:wght@500;600&display=swap');
+
+body{
+    font-family: 'Metropolis', sans-serif;
+    background-color: #F9FCFF;
+}
+
+
+.nav-link.active {
+    color: #fff !important;
+  }
+
+
+  .navbar-brand {
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 600;
+  }
+  .navbar-nav .nav-link {
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 500;
+  }
