@@ -42,6 +42,65 @@
 
     <h1>Contact Page</h1>
 
+    <div id="room-container" class="row"></div>
+  
+    <!-- your other HTML code goes here -->
+    
+    <script>
+      // insert the JavaScript code here
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          // loop through the "rooms" array
+          data.rooms.forEach(room => {
+            // create HTML elements
+            const colDiv = document.createElement('div');
+            colDiv.classList.add('col', 'mt-3');
+  
+            const cardDiv = document.createElement('div');
+            cardDiv.classList.add('card');
+            cardDiv.style.width = '18rem';
+  
+            const imgElement = document.createElement('img');
+            imgElement.src = room.image;
+            imgElement.classList.add('card-img-top', 'p-2');
+            imgElement.alt = '...';
+  
+            const cardBodyDiv = document.createElement('div');
+            cardBodyDiv.classList.add('card-body');
+  
+            const nameH5 = document.createElement('h5');
+            nameH5.classList.add('card-text', 'text-black', 'font-weight-bold', 'mb-0');
+            nameH5.textContent = room.name;
+  
+            const bedsP1 = document.createElement('p');
+            bedsP1.classList.add('mb-0');
+            bedsP1.textContent = room.beds;
+  
+            const priceP1 = document.createElement('p');
+            priceP1.classList.add('fs-6', 'mb-0');
+            priceP1.textContent = 'Starts at';
+  
+            const priceP2 = document.createElement('p');
+            priceP2.classList.add('mb-0');
+            priceP2.textContent = `Php ${room.price}`;
+  
+            // append HTML elements to the page
+            cardBodyDiv.appendChild(nameH5);
+            cardBodyDiv.appendChild(bedsP1);
+            cardBodyDiv.appendChild(priceP1);
+            cardBodyDiv.appendChild(priceP2);
+  
+            cardDiv.appendChild(imgElement);
+            cardDiv.appendChild(cardBodyDiv);
+  
+            colDiv.appendChild(cardDiv);
+  
+            document.getElementById('room-container').appendChild(colDiv);
+          });
+        });
+    </script>
+
 
 
 
