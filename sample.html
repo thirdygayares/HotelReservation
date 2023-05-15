@@ -1,76 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Customer Comments</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    .comment-container {
-      overflow-x: scroll;
-    }
-    .comment-card {
-      display: inline-block;
-      width: 300px;
-      margin-right: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      word-wrap: break-word; /* Added property */
-      overflow-wrap: break-word; /* Added property */
-    }
-    .comment-card p {
-      word-wrap: break-word; /* Added property */
-      overflow-wrap: break-word; /* Added property */
-    }
-  </style>
+  <title>Reservation Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Customer Comments</h1>
-    <div class="comment-container">
-      <div class="comment-card">
-        <h3>Customer 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Rating: 4/5</p>
-      </div>
-      <div class="comment-card">
-        <h3>Customer 2</h3>
-        <p>Nulla facilisi. Curabitur in ante vitae elit volutpat euismod.</p>
-        <p>Rating: 5/5</p>
-      </div>
-      <div class="comment-card">
-        <h3>Customer 3</h3>
-        <p>Suspendisse potenti. Mauris in turpis at ligula aliquet volutpat.</p>
-        <p>Rating: 3/5</p>
-      </div>
-      <div class="comment-card">
-        <h3>Customer 4</h3>
-        <p>Aliquam tempor nunc sed felis ultrices, vitae egestas elit placerat.</p>
-        <p>Rating: 4.5/5</p>
-      </div>
-      <div class="comment-card">
-        <h3>Customer 5</h3>
-        <p>Etiam pellentesque ex at mauris consectetur, vitae laoreet sem rhoncus.</p>
-        <p>Rating: 4.8/5</p>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('.comment-container').on('touchstart mousedown', function(e) {
-        var startX = e.pageX || e.originalEvent.touches[0].pageX;
-        var scrollLeft = $(this).scrollLeft();
-
-        $(this).on('touchmove mousemove', function(e) {
-          var x = e.pageX || e.originalEvent.touches[0].pageX;
-          var distance = startX - x;
-          $(this).scrollLeft(scrollLeft + distance);
-        });
-      }).on('touchend mouseup', function() {
-        $(this).off('touchmove mousemove');
-      });
-    });
-  </script>
+ 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 </html>
