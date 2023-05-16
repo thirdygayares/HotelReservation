@@ -108,7 +108,7 @@
             data: data,
             success: function(response) {
                 alert("Contact successfully");
-                window.location.href = 'index.html';
+                window.location.href = 'index.php';
                 console.log("Record created successfully");
             },
             error: function(xhr, status, error) {

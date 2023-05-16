@@ -108,7 +108,7 @@
         data: data,
         success: function(response) {
             alert("Record created successfully");
-            window.location.href = 'index.html';
+            window.location.href = 'index.php';
             console.log("Record created successfully");
         },
         error: function(xhr, status, error) {

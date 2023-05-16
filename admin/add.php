@@ -131,7 +131,7 @@
       data: data,
       success: function(response) {
           alert("room created successfully");
-          window.location.href = 'index.html';
+          window.location.href = 'index.php';
           console.log("Record created successfully");
       },
       error: function(xhr, status, error) {
