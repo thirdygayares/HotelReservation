@@ -29,17 +29,17 @@
             <div class="col-2 bg-dark vh-100 sticky-top">
               <ul class="nav flex-column mt-3">
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="index.html">
+                  <a class="nav-link text-light" href="index.php">
                     <i class="fas fa-bed p-2"></i> Room Type
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-warning" href="reservation.html">
+                  <a class="nav-link text-warning" href="reservation.php">
                     <i class="fas fa-calendar-alt p-2"></i> Reservation
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="contact.html">
+                  <a class="nav-link text-light" href="contact.php">
                     <i class="fas fa-address-book p-2"></i> Contacts
                   </a>
                 </li>

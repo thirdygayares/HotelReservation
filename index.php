@@ -75,25 +75,25 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html" id="home-button"
+              <a class="nav-link active" href="index.php" id="home-button"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile.html" id="profile-button"
+              <a class="nav-link" href="profile.php" id="profile-button"
                 >Company Profile</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="reservation.html"
+                href="reservation.php"
                 id="reservation-button"
                 >Reservation</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html" id="contact-button"
+              <a class="nav-link" href="contact.php" id="contact-button"
                 >Contact</a
               >
             </li>

@@ -25,16 +25,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link " href="index.html" id="home-button">Home</a>
+            <a class="nav-link " href="index.php" id="home-button">Home</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="profile.html" id="profile-button">Company Profile</a>
+            <a class="nav-link" href="profile.php" id="profile-button">Company Profile</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link active" href="reservation.html" id="reservation-button">Reservation</a>
+            <a class="nav-link active" href="reservation.php" id="reservation-button">Reservation</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="contact.html" id="contact-button">Contact</a>
+            <a class="nav-link" href="contact.php" id="contact-button">Contact</a>
           </li>
         </ul>
       </div>

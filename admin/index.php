@@ -29,17 +29,17 @@
             <div class="col-2 bg-dark vh-100 sticky-top">
               <ul class="nav flex-column mt-3">
                 <li class="nav-item">
-                  <a class="nav-link text-warning" href="index.html">
+                  <a class="nav-link text-warning" href="index.php">
                     <i class="fas fa-bed p-2"></i> Room Type
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="reservation.html">
+                  <a class="nav-link text-light" href="reservation.php">
                     <i class="fas fa-calendar-alt p-2"></i> Reservation
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="contact.html">
+                  <a class="nav-link text-light" href="contact.php">
                     <i class="fas fa-address-book p-2"></i> Contacts
                   </a>
                 </li>
@@ -49,7 +49,7 @@
             <div class="col mt-5">
                 <div class="container mt-4">
                     <h1>Room Type Table</h1>
-                    <button class="btn btn-primary" onclick="location.href='add.html'">Add Room</button>
+                    <button class="btn btn-primary" onclick="location.href='add.php'">Add Room</button>
                     <table class="table">
                       <thead>
                         <tr>
