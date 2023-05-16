@@ -38,8 +38,8 @@
   <header class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="assets/logo.png" alt="Thirdy Hotel Logo" width="50" height="50">
-        <span style="font-weight: 600;">Thirdy</span> Hotel
+        <img src="assets/logo.png" alt="Avi Hotel Logo" width="50" height="50">
+        <span style="font-weight: 600;">Avi</span> 
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

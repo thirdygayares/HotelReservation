@@ -25,8 +25,8 @@
     <header class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid text-white">
           <a class="navbar-brand" href="#">
-            <img src="../assets/logo.png" alt="Thirdy Hotel Logo" width="50" height="50">
-            <span style="font-weight: 600;">Thirdy</span> Hotel Admin
+            <img src="../assets/logo.png" alt="Avi Hotel Logo" width="50" height="50">
+            <span style="font-weight: 600;">Avi</span>  Admin
           </a>
         </div>
     </header>

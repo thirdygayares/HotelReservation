@@ -52,11 +52,11 @@
         <a class="navbar-brand" href="#">
           <img
             src="assets/logo.png"
-            alt="Thirdy Hotel Logo"
+            alt="Avi Hotel Logo"
             width="50"
             height="50"
           />
-          <span style="font-weight: 600">Thirdy</span> Hotel
+          <span style="font-weight: 600">Avi</span>
         </a>
         <button
           class="navbar-toggler"

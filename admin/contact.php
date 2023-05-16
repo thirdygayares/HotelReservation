@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Type</title>
+    <title>Document</title>
     <link
     rel="stylesheet"
     href="../node_modules/bootstrap/dist/css/bootstrap.min.css"/>
@@ -17,8 +17,8 @@
     <header class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid text-white">
           <a class="navbar-brand" href="#">
-            <img src="../assets/logo.png" alt="Thirdy Hotel Logo" width="50" height="50">
-            <span style="font-weight: 600;">Thirdy</span> Hotel Admin
+            <img src="../assets/logo.png" alt="Avi Hotel Logo" width="50" height="50">
+            <span style="font-weight: 600;">Avi</span>  Admin
           </a>
         </div>
     </header>
@@ -29,7 +29,7 @@
             <div class="col-2 bg-dark vh-100 sticky-top">
               <ul class="nav flex-column mt-3">
                 <li class="nav-item">
-                  <a class="nav-link text-warning" href="index.html">
+                  <a class="nav-link text-light" href="index.html">
                     <i class="fas fa-bed p-2"></i> Room Type
                   </a>
                 </li>
@@ -39,7 +39,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-light" href="contact.html">
+                  <a class="nav-link text-warning" href="contact.html">
                     <i class="fas fa-address-book p-2"></i> Contacts
                   </a>
                 </li>
@@ -48,21 +48,22 @@
 
             <div class="col mt-5">
                 <div class="container mt-4">
-                    <h1>Room Type Table</h1>
-                    <button class="btn btn-primary" onclick="location.href='add.html'">Add Room</button>
+                    <h1>Contacts Table</h1>
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Image</th>
                           <th>Name</th>
-                          <th>Bed Type</th>
-                          <th>Start Price</th>
+                          <th>Email</th>
+                          <th>Phone</th>
+                          <th>Message</th>
+                          
                         </tr>
                       </thead>
                       <tbody id="reservation-data"></tbody>
                     </table>
                   </div>
             </div>
+
     </div>
 
 
@@ -71,24 +72,24 @@
     <script>
       $(document).ready(function() {
         $.ajax({
-          url: 'http://localhost/HotelReservation/backend/api.php',
+          url: 'http://localhost/HotelReservation/backend/contact.php',
           method: 'GET',
           dataType: 'json',
           success: function(data) {
-            var roomData = '';
+            var contactData = '';
   
             // Loop through the retrieved data
             data.forEach(function(reservation) {
-              roomData += '<tr>';
-              roomData += '<td>' + '<img src="../assets/' + reservation.imageSrc+'" style="width: 200px"><img></td>';
-              roomData += '<td>' + reservation.title + '</td>';
-              roomData += '<td>' + reservation.typeBed + '</td>';
-              roomData += '<td>' + reservation.price + '</td>';
-              roomData += '</tr>';
+              contactData += '<tr>';
+              contactData += '<td>' + reservation.NAME + '</td>';
+              contactData += '<td>' + reservation.EMAIL + '</td>';
+              contactData += '<td>' + reservation.Phone + '</td>';
+              contactData += '<td>' + reservation.Message + '</td>';
+              contactData += '</tr>';
             });
   
             // Append the reservation data to the table body
-            $('#reservation-data').html(roomData);
+            $('#reservation-data').html(contactData);
             console.log('Success');
           },
           error: function() {
